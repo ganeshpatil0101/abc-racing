@@ -7,10 +7,10 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserHistory } from 'history';
 import { createAppStore } from './store/configureStore';
 import './i18n';
+import analytics from './analytics';
 const history = createBrowserHistory();
 const initialState = {};
 const store = createAppStore(initialState, history);
-
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

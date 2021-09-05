@@ -9,7 +9,7 @@ apihandler
 cache api 
 api call to get image 
 lazy loading - done
-analytics
+analytics - Done
 unit tests
 acceessibility
 github actions
