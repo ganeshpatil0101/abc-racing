@@ -1,8 +1,8 @@
 ABC Racing 
 
-basic UI
-sections with bookmarks - smoot scroll
-stylecomponent with multiple theme
+basic UI - done
+sections with bookmarks - smoot scroll - done
+stylecomponent with multiple theme - done
 reacti18next
 redux-saga
 apihandler
