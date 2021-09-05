@@ -6,6 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserHistory } from 'history';
 import { createAppStore } from './store/configureStore';
+import './i18n';
 const history = createBrowserHistory();
 const initialState = {};
 const store = createAppStore(initialState, history);

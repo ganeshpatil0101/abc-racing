@@ -15,7 +15,6 @@ const sliderSlice = createSlice({
     reducers:{
         getSlidersDataSuccess: (state, payload) => {
             const res = payload.payload;
-            console.log('----------res  ', res);
             state.sliderData = res.data;
         },
     }

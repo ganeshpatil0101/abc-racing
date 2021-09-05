@@ -3,8 +3,8 @@ ABC Racing
 basic UI - done
 sections with bookmarks - smoot scroll - done
 stylecomponent with multiple theme - done
-reacti18next
-redux-saga
+reacti18next - Done
+redux-saga - done
 apihandler
 cache api 
 api call to get image 

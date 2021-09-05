@@ -1,5 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
+const LanguageSwitcher = React.lazy(() => import("../components/LanguageSwitcher"));
 const Container = styled.div`
   margin:0;
   padding:0;
@@ -24,14 +26,16 @@ const Button = styled.button`
   text-decoration: none;
 `;
 function Navbar() {
+  const {t} = useTranslation();
   return (
     <Container>
       <header>
         <Title>ABC Racing</Title>
         <Menus>
-          <Button as="a" href="#slider">Slider</Button>
-          <Button as="a" href="#topRacers">Top Racers</Button>
-          <Button as="a" href="#fixtures">Fixtures</Button>
+          <Button as="a" href="#slider">{t('generic.slider')}</Button>
+          <Button as="a" href="#topRacers">{t('generic.topracers')}</Button>
+          <Button as="a" href="#fixtures">{t('generic.fixtures')}</Button>
+          <LanguageSwitcher/>
         </Menus>
       </header>
     </Container>

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 const Container = styled.div`
   margin:0;
   padding:0;
@@ -12,9 +13,10 @@ const Title = styled.h2`
   line-height: 2.5;
 `
 function Slider() {
+  const {t} = useTranslation();
   return (
     <Container id="slider">
-      <Title>Slider</Title>
+      <Title>{t('slider.title')}</Title>
     </Container>
   );
 }
