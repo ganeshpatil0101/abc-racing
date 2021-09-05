@@ -8,7 +8,7 @@ redux-saga
 apihandler
 cache api 
 api call to get image 
-lazy loading
+lazy loading - done
 analytics
 unit tests
 acceessibility

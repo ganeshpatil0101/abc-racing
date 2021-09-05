@@ -23,11 +23,6 @@ const Button = styled.button`
   margin-left:0.5em;
   text-decoration: none;
 `;
-
-const TomatoButton = styled(Button)`
-  color: tomato;
-  border-color: tomato;
-`;
 function Navbar() {
   return (
     <Container>
