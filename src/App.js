@@ -1,14 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, {lazy, Suspense} from "react";
+import { ThemeProvider } from 'styled-components';
+const Navbar = lazy(() => import('./components/Navbar'));
+const theme = JSON.parse(localStorage.getItem('theme'));
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <H1>ABC Racing</H1>
-      </header>
-    </div>
-  );
+    <Suspense fallback={<span> Loading </span>} >
+      <ThemeProvider theme={theme}>
+        <Navbar />
+      </ThemeProvider>
+    </Suspense>
+    );
 }
 
 export default App;
