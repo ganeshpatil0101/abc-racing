@@ -28,7 +28,7 @@ const Button = styled.button`
 function Navbar() {
   const {t} = useTranslation();
   return (
-    <Container>
+    <Container data-testid="navbar-container">
       <header>
         <Title>ABC Racing</Title>
         <Menus>

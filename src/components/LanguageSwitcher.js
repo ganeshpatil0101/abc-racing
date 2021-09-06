@@ -10,10 +10,16 @@ function LanguageSwitcher() {
     });
     return (
         <>
-            <select name="language-switcher" onChange={onselect} >
-                <option value="en" >en</option>
-                <option value="sp" >sp</option>
-            </select>
+            <div data-testid="lang-container" >
+                {/* <label aria-label="language-switcher"> */}
+                    <select  
+                        area-role="language"
+                        onChange={onselect} >
+                        <option value="en" >en</option>
+                        <option value="sp" >sp</option>
+                    </select>
+                {/* </label> */}
+            </div>
         </>
     )
 }

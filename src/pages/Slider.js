@@ -15,7 +15,7 @@ const Title = styled.h2`
 function Slider() {
   const {t} = useTranslation();
   return (
-    <Container id="slider">
+    <Container id="slider" data-testid="slider-container">
       <Title>{t('slider.title')}</Title>
     </Container>
   );

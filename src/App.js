@@ -25,10 +25,12 @@ function App() {
   return (
     <Suspense fallback={<span> Loading </span>} >
       <ThemeProvider theme={theme}>
+        <div data-testid="app-container">
           <Navbar />
           <Slider />
           <TopRacers />
           <Fixtures />
+        </div>
       </ThemeProvider>
     </Suspense>
     );
