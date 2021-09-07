@@ -28,16 +28,15 @@ jobs:
       - uses: actions/setup-node@v2
         with:
             node-version:12
-            cache: yarn
 
       # Runs a single command using the runners shell
       - name: Dependencies
-        run: yarn install
+        run: npm install --verbose
 
       # Runs a set of commands using the runners shell
       - name: Tests
-        run: yarn test
+        run: npm test
 
       - name: Build
-        run: yarn run build
+        run: npm run build
 
