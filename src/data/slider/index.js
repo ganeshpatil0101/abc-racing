@@ -1,5 +1,4 @@
 import { createSlice, createAction } from "@reduxjs/toolkit";
-import {cloneDeep} from "lodash";
 const SLIDER_ACTION = { 
     getSlidersData: createAction('slider/getSlidersData'),
     getSlidersDataSuccess: createAction('slider/getSlidersDataSuccess'),
