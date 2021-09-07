@@ -10,7 +10,7 @@ cache api
 api call to get image 
 lazy loading - done
 analytics - Done
-unit tests
-acceessibility
+unit tests - done
+acceessibility - done
 github actions
 github hooks
