@@ -27,7 +27,7 @@ jobs:
 
       - uses: actions/setup-node@v2
         with:
-            node-version:12
+            node-version: '12'
 
       # Runs a single command using the runners shell
       - name: Dependencies
