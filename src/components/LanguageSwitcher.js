@@ -11,14 +11,14 @@ function LanguageSwitcher() {
     return (
         <>
             <div data-testid="lang-container" >
-                {/* <label aria-label="language-switcher"> */}
+                <label aria-label="language-switcher">
                     <select  
                         area-role="language"
                         onChange={onselect} >
                         <option value="en" >en</option>
                         <option value="sp" >sp</option>
                     </select>
-                {/* </label> */}
+                </label>
             </div>
         </>
     )

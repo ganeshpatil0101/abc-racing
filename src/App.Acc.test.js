@@ -17,7 +17,6 @@ test('should have not web accessibility violations ', async ()=>{
     </Provider>  );
     const nav = await screen.findByTestId('navbar-container');
     const lang = await screen.findByTestId('lang-container');
-    debug();
     const res = await axe(container);
     expect(res).toHaveNoViolations();
 });
