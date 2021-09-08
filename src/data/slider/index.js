@@ -14,7 +14,7 @@ const sliderSlice = createSlice({
     reducers:{
         getSlidersDataSuccess: (state, payload) => {
             const res = payload.payload;
-            state.sliderData = res.data;
+            state.sliderData = res.results[0];
         },
     }
 });

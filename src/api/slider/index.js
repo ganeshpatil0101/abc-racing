@@ -1,13 +1,7 @@
-export const fetchSlidersData = (payload) => {
+import {getMethod} from '../apiHandler';
+ export const fetchSlidersData = (payload) => {
     try{
-        return new Promise((resolve, reject) => {
-            setTimeout(()=>{ 
-                console.log('wait hover ');
-                resolve({
-                    data: {'imgs':['url1', 'url2']}
-                });
-            }, 2000);
-        }); 
+        return getMethod("https://api.unsplash.com/search/photos?page=1&query=car");
     }catch(e) {
         //TODO handle erros
         console.error(e);

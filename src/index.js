@@ -8,6 +8,7 @@ import { createBrowserHistory } from 'history';
 import { createAppStore } from './store/configureStore';
 import './i18n';
 import analytics from './analytics';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 const history = createBrowserHistory();
 const initialState = {};
 const store = createAppStore(initialState, history);
@@ -19,4 +20,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+serviceWorkerRegistration.register();
 reportWebVitals();

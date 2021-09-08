@@ -27,7 +27,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <div data-testid="app-container">
           <Navbar />
-          <Slider />
+          <Slider sliderData={sliderData} />
           <TopRacers />
           <Fixtures />
         </div>

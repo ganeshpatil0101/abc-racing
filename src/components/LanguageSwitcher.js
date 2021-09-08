@@ -1,5 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import styled from 'styled-components';
+const Container = styled.div`
+  display:inline-block;
+`;
 
 function LanguageSwitcher() {
     const { i18n } = useTranslation();
@@ -10,16 +14,16 @@ function LanguageSwitcher() {
     });
     return (
         <>
-            <div data-testid="lang-container" >
-                <label aria-label="language-switcher">
+            <Container data-testid="lang-container" >
+                {/* <label aria-label="language-switcher"> */}
                     <select  
                         area-role="language"
                         onChange={onselect} >
                         <option value="en" >en</option>
                         <option value="sp" >sp</option>
                     </select>
-                </label>
-            </div>
+                {/* </label> */}
+            </Container>
         </>
     )
 }
