@@ -1,0 +1,35 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Depedencies') {
+            steps {
+                sh ' npm install'
+            }
+        }
+
+        stage('Tests') {
+            steps {
+                echo 'Running tests'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Running build...'
+            }
+        }
+        
+        stage('Artifact') {
+            steps {
+                echo 'Uploading to Artifact'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
+            }
+        }
+    }
+}
