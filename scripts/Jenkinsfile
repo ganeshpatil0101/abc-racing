@@ -19,6 +19,7 @@ pipeline {
             steps {
                 echo 'Hello '
                 myLibFile 'Ganesh'
+                
             }
         }
         
@@ -39,12 +40,19 @@ pipeline {
                 echo "Building version ${ENV_TEST_VAR}"
                 echo "BRANCH_NAME = ${params.BRANCH_NAME}"
                 echo "package to deploy = ${params.PACKAGES}"
+                script {
+                    genericLib.buildApp()    
+                }
+                
             }
         }
         
         stage('Artifact') {
             steps {
                 echo 'Uploading to Artifact'
+                 script {
+                    genericLib.deployArtifact(ENV_TEST_VAR)
+                }
             }
         }
 
