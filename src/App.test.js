@@ -7,7 +7,7 @@ afterEach(cleanup);
 const history = createBrowserHistory();
 const initialState = {};
 const store = createAppStore(initialState, history);
-test('renders learn react link', async () => {
+test('ABC Racing should be in the document', async () => {
   render(
     <Provider store={store}>
       <App />
