@@ -12,11 +12,11 @@ i18n
             en:{
                 translation:{
                     slider:{
-                        title: "Hello, Slider"
+                        title: "Hello, Slider Test"
                     },
                     generic:{
-                        slider:'Slider',
-                        topracers: 'Top Racers',
+                        slider:'Slider Test',
+                        topracers: 'Top Racers 1',
                         fixtures: 'Fixtures'
                     }
                 }
